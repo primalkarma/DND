@@ -13,8 +13,13 @@ struct MonsterListView: View {
         NavigationStack {
             ZStack {
                 List(monstersVM.monsters) { monster in
-                    Text(monster.name)
-                        .font(.title2)
+                    NavigationLink {
+                         MonsterDetailView(monster: monster)
+                    } label: {
+                        Text(monster.name)
+                            .font(.title2)
+                    }
+                    
                 }
                 .listStyle(.plain)
                 
