@@ -11,7 +11,7 @@ import SwiftUI
 struct DNDApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MonsterListView()
         }
     }
 }
